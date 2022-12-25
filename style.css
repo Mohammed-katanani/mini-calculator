@@ -1,0 +1,117 @@
+/* start globle */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #1e1e1e;
+}
+
+/* end globle */
+header {
+  height: 80px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #147fde;
+  line-height: 80px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: calc(100vh - 140px);
+  color: #fff;
+}
+
+/* result box */
+.result {
+  width: 400px;
+  height: 400px;
+  background-color: #147fde;
+  color: black;
+  text-shadow: #eee;
+  border-radius: 15px;
+  /* line-height: 400px; */
+  font-size: 30px;
+}
+.result p{
+    margin-top: 140px;
+}
+/* control box */
+.control {
+  width: 400px;
+  height: 400px;
+  transform: translateY(20px);
+}
+.control>div:first-child{
+    margin: 0px 0 50px;
+}
+.control>div{
+    
+    text-align: start;
+}
+.control input {
+    width: 100%;
+    color: #3d76a9;
+    background-color: #fff;
+    padding: 12px 25px;
+    font-size: 22px;
+    border-radius: 4px;
+    margin: 15px 0;
+  }
+.control button {
+  color: #fff;
+  background-color: #3d76a9;
+  width: 100;
+  padding: 15px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  margin-bottom: 20px;
+}
+.control button.active{
+    background-color: green;
+}
+.control button:hover {
+  background-color: #147fde;
+  letter-spacing: 1.1px;
+}
+
+.control p {
+  font-size: 22px;
+  color: #fff;
+  padding: 15px 0;
+}
+p:nth-child(3) {
+  color: #3d76a9;
+  
+}
+
+.btns {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 15px;
+}
+.btns button {
+    flex: 1;
+  padding: 8px 15px;
+  border-radius: 4px;
+  background-color: #147fde;
+  cursor: pointer;
+}
+
+footer{
+    height: 60px;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #147fde;
+    font-weight: bold;
+}
